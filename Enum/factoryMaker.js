@@ -1,18 +1,17 @@
+const UnsupportedOperationError = require('../Error/unsupportedOperationError');
 const EnumSymbolFactory = require('./enumSymbolFactory');
 const RankEnumSymbolFactory = require('./rankEnumSymbolFactory');
 
 class FactoryMaker {
   constructor() {
-    this.enumFactory;
+    throw new UnsupportedOperationError('Do not make instance !!!');
   }
 
   static getFactory(choice) {
     if (choice === 'Rank') {
-      this.enumFactory = new RankEnumSymbolFactory();
-    } else {
-      this.enumFactory = new EnumSymbolFactory();
+      return new RankEnumSymbolFactory();
     }
-    return this.enumFactory;
+    return new EnumSymbolFactory();
   }
 }
 
