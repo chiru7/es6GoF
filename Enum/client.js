@@ -21,3 +21,11 @@ console.log('Rank.BEGINNER.valueOfValue():', Rank.BEGINNER.valueOfValue());
 
 console.log('Rank.BEGINNER.valueOfOrder():', Rank.BEGINNER.valueOfOrder());
 // console.log('RankPlain.BEGINNER.valueOfOrder():', RankPlain.BEGINNER.valueOfOrder()); // undefined function
+
+console.log('Rank.INTERMEDIATE.largerThan(Rank.BEGINNER):', Rank.INTERMEDIATE.largerThan(Rank.BEGINNER));
+console.log('Rank.INTERMEDIATE.largerThan(Rank.INTERMEDIATE):', Rank.INTERMEDIATE.largerThan(Rank.INTERMEDIATE));
+console.log('Rank.INTERMEDIATE.largerThan(Rank.ADVANCED):', Rank.INTERMEDIATE.largerThan(Rank.ADVANCED));
+
+console.log('Rank.INTERMEDIATE.eqOrLargerThan(Rank.BEGINNER):', Rank.INTERMEDIATE.eqOrLargerThan(Rank.BEGINNER));
+console.log('Rank.INTERMEDIATE.eqOrLargerThan(Rank.INTERMEDIATE):', Rank.INTERMEDIATE.eqOrLargerThan(Rank.INTERMEDIATE));
+console.log('Rank.INTERMEDIATE.eqOrLargerThan(Rank.ADVANCED):', Rank.INTERMEDIATE.eqOrLargerThan(Rank.ADVANCED));
