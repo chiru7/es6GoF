@@ -3,7 +3,6 @@ const EnumSymbol = require('./enumSymbol');
 class Enum {
   constructor(enumLiterals, factory) {
     Object.keys(enumLiterals).forEach((key) => {
-      if (!enumLiterals[key]) throw new TypeError('each enum should have been initialized with atleast empty {} value');
       this[key] = factory.createEnumSymbol(key, enumLiterals[key]);
     });
     Object.freeze(this);
